@@ -3,30 +3,30 @@
 #include <iostream>
 using namespace std;
 int main (){
-    // int a , b ;
-    // cout<< "Enter the  two num:";
-    // cin >> a >> b ;
-    // char A ,S,M,D,MO;
-    // cout << "Which Arthemetic operation u want , A = add , S = sub , M = Mul , D = Div , MO = Mod" <<endl ; 
-    // cin >>A>>S>>M>>D>>MO;
-    // if ( A == 'A' || A == 'a'){
-    //     cout << "Addition of two number is : "<< a + b <<endl;
-    // }
-    // else if (S == 'S' || S == 's'){
-    //     cout << "Subtraction of two number is : "<< a - b <<endl;
-    // }
-    // else if (M == 'M' || M == 'm'){
-    //     cout << "Multiplication of two number is : "<< a * b <<endl;
-    // }
-    // else if (D == 'D' || D == 'd'){
-    //     cout << "Division of two number is : "<< a / b <<endl;
-    // }
-    // else if (MO == 'MO' || MO == 'mo'){
-    //     cout << "Modulus of two number is : "<< a % b <<endl;
-    // }
-    // else {
-    //     cout << "Invalid Input" <<endl;
-    // }
+    int a , b ;
+    cout<< "Enter the  two num:";
+    cin >> a >> b ;
+    char A ,S,M,D,MO;
+    cout << "Which Arthemetic operation u want , A = add , S = sub , M = Mul , D = Div , MO = Mod" <<endl ; 
+    cin >>A>>S>>M>>D>>MO;
+    if ( A == 'A' || A == 'a'){
+        cout << "Addition of two number is : "<< a + b <<endl;
+    }
+    else if (S == 'S' || S == 's'){
+        cout << "Subtraction of two number is : "<< a - b <<endl;
+    }
+    else if (M == 'M' || M == 'm'){
+        cout << "Multiplication of two number is : "<< a * b <<endl;
+    }
+    else if (D == 'D' || D == 'd'){
+        cout << "Division of two number is : "<< a / b <<endl;
+    }
+    else if (MO == 'MO' || MO == 'mo'){
+        cout << "Modulus of two number is : "<< a % b <<endl;
+    }
+    else {
+        cout << "Invalid Input" <<endl;
+    }
 
 
     // if and take more time complexity so best way to approc is to use Switch case 
@@ -53,7 +53,7 @@ int main (){
 
      }
 
-/ //  ODD & EVEN
+ //  ODD & EVEN
 
 int c , d;
 cout << "Enter the value of a and b :";
