@@ -7,6 +7,7 @@ private :
     int marks;
 
     public :
+    //the constructor is used to initialize the data members of the class
 
     void get_data(){
         cin>>name>>roll>>marks;
