@@ -15,41 +15,41 @@ Syntax : datatype array_name[size] ;
 - liner data structure
 */
 
-// int main(){
-//     int marks[5] ; 
-//     for ( int i = 0 ; i < 5 ; i++){
-//         cin >> marks[i];
+int main(){
+    int marks[5] ; 
+    for ( int i = 0 ; i < 5 ; i++){
+        cin >> marks[i];
 
-//     }
+    }
 
-//     for ( int i = 0 ; i < 5 ; i++){
-//         cout <<marks[i] <<"" << endl;
+    for ( int i = 0 ; i < 5 ; i++){
+        cout <<marks[i] <<"" << endl;
 
-//     }
-// }
+    }
+}
 
-// int main(){
-//     int marks [5] = {10 , 20 , 30 , 40 , 50 };
+int main(){
+    int marks [5] = {10 , 20 , 30 , 40 , 50 };
     
-//         cout << sizeof(marks) << endl ;
-//         cout << sizeof(marks[0]) << endl ;
-// }
+        cout << sizeof(marks) << endl ;
+        cout << sizeof(marks[0]) << endl ;
+}
 //--------------------------------------
 // {Loop on Array}
 // Find smallest in Array 
 //--------------------------------------
-// int main(){
-//    int   marks[] = {10 , 20 , 30 , 40 , 5};
-//    int smallest = marks[0];
-//    for ( int i  = 0 ; i < 5 ; i++)
-//    {
-//     if (marks[i] < smallest)
-//     {
-//         smallest = marks[i];
-//     }
-//    }
-//    cout << "Smallest element in the array is: " << smallest << endl;
-// }
+int main(){
+   int   marks[] = {10 , 20 , 30 , 40 , 5};
+   int smallest = marks[0];
+   for ( int i  = 0 ; i < 5 ; i++)
+   {
+    if (marks[i] < smallest)
+    {
+        smallest = marks[i];
+    }
+   }
+   cout << "Smallest element in the array is: " << smallest << endl;
+}
 
 // same goes for largest element in the array we have to change the condition in the if statement to find the largest element in the array. 
 
@@ -70,13 +70,13 @@ When you pass an array to a function, it is passed by reference, meaning that th
 
 // }
 
-// int main(){
-//     int arr[] = { 1,2,3};
-//     int size = 3; 
-//     changeArray(arr, size);
-//     for (int i = 0 ; i < size ; i++){
-//         cout << arr[i]<< " ";
-//     }
+int main(){
+    int arr[] = { 1,2,3};
+    int size = 3; 
+    changeArray(arr, size);
+    for (int i = 0 ; i < size ; i++){
+        cout << arr[i]<< " ";
+    }
 
 
 // } 
@@ -98,4 +98,19 @@ int main(){
     int arr[] = { 1,2,3,4,5};
     int size = 5 ; 
     findTarget(arr, size, 6);
+}
+
+
+int factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;  // Base case
+    }
+
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int n = 5;
+    cout << factorial(n);
+    return 0;
 }
