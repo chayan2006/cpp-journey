@@ -93,7 +93,57 @@ you would need to ensure that you properly free any allocated memory to avoid le
 
 /*
 function overloading vs function overriding 
- 
+ compile time polymorphism vs run time polymorphism
+ static binding vs dynamic binding
+ early binding vs late binding
 
 
 */
+
+int main(){
+    shape *bptr;
+    circle c ;
+    rect  r ; 
+    sq s ; 
+    bptr = &c ; bptr->area() ;
+    bptr = &r ; bptr->area() ;
+    bptr = &s ; bptr->area() ;
+    
+    return 0;
+
+}
+
+/*
+Problem Statement 
+create a class  Student having the following private data members :
+rollNo (integer), name (string), marks (float)
+
+implement the following 
+1 . A parametrrized constructor to initialize  student objects
+2 . member 
+function to display the details of the student
+3 . member function to calculate the grade of the student based on marks (e.g., A, B, C, D, F)
+
+
+*/
+int main(){
+    int n ; 
+    cout<<"Enter the number of students : ";
+    cin>> n ; 
+    Student *students = new Student[n]; 
+
+    for (int i = 0; i < n; i++) {
+        int rollNo;
+        string name;
+        float marks;
+
+        cout << "Enter details for student " << (i + 1) << ":\n";
+        cout << "Roll No: ";
+        cin >> rollNo;
+        cout << "Name: ";
+        cin >> name;
+        cout << "Marks: ";
+        cin >> marks;
+
+        students[i] = Student(rollNo, name, marks); 
+    }
